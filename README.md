@@ -120,6 +120,24 @@ This demonstrates how ML classification can integrate with automated response wo
 
 ---
 
+## How To Run
+===
+1. Clone the repository:
+https://github.com/rohitaswal2108-Roh/-AI-SOC-Alert-Framework.git
+
+2. Navigate into the directory:
+cd AI-SOC-Alert-Framework
+
+3. Create virtual environment and install dependencies:
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+4. Open and run:
+notebooks/soc_alert_ml.ipynb
+
+---
+
 ## Screenshots
 
 ### Dataset Preview
@@ -202,3 +220,4 @@ The framework bridges cybersecurity operations with applied AI, reflecting moder
 ## Author
 
 **Rohit Aswal**
+Cybersecurity | SOC | Threat Detection | AI for Security
