@@ -121,7 +121,7 @@ This demonstrates how ML classification can integrate with automated response wo
 ---
 
 ## How To Run
-===
+
 1. Clone the repository:
 https://github.com/rohitaswal2108-Roh/-AI-SOC-Alert-Framework.git
 
