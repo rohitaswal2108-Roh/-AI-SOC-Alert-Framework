@@ -150,22 +150,20 @@ This demonstrates how ML classification can integrate with automated response wo
 - Synthetic Dataset Engineering  
 
 ---
-
 ## Project Structure
 
+```
 AI-SOC-Alert-Framework/
 │
 ├── data/
 ├── notebooks/
-│ └── soc_alert_ml.ipynb
+│   └── soc_alert_ml.ipynb
 ├── model/
-│ ├── soc_alert_model.pkl
-│ └── label_encoder.pkl
+│   ├── soc_alert_model.pkl
+│   └── label_encoder.pkl
 ├── screenshots/
 └── report/
-
-
----
+```
 
 ## Security Relevance
 
