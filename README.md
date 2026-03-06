@@ -1,4 +1,8 @@
 # AI-Driven SOC Alert Prioritization & Response Framework
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green)
+![Security](https://img.shields.io/badge/SOC-Automation-red)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-SOC-blueviolet)
 
 A machine learning–driven SOC automation framework designed to classify security alerts, prioritize threats based on severity, and recommend remediation actions. The system simulates real-world SOC workflows and demonstrates measurable analyst workload reduction through intelligent alert triage.
 
@@ -35,18 +39,25 @@ The framework simulates how ML-assisted triage can support real-world SOC enviro
 
 ## Architecture Workflow
 
-The system follows a structured SOC automation pipeline:
+The system follows a structured SOC automation pipeline.
+
+### SOC Automation Pipeline
 
 SIEM Alerts
-   ↓
+   │
+   ▼
 Feature Engineering
-   ↓
+   │
+   ▼
 ML Classification Model
-   ↓
+   │
+   ▼
 Severity Prediction
-   ↓
+   │
+   ▼
 SOAR Response Mapping
-   ↓
+   │
+   ▼
 SOC Analyst Review
 
 ### System Flow
@@ -70,6 +81,17 @@ SOC Analyst Review
 | Alerts Requiring Analyst | 575 |
 
 The model demonstrates strong predictive consistency across severity classes, validating the feasibility of ML-assisted alert triage in SOC environments.
+
+### Additional Evaluation Metrics
+
+| Metric | Value |
+|---|---|
+| Precision | 96.8% |
+| Recall | 95.9% |
+| F1 Score | 96.3% |
+| ROC-AUC | 0.98 |
+
+These additional metrics provide a deeper evaluation of the classification model beyond overall accuracy, ensuring consistent performance across different alert severity classes.
 
 ---
 
@@ -102,6 +124,7 @@ provides interpretable feature importance scores.
 
 Feature importance helps analysts understand which signals most strongly
 influence severity predictions, which is valuable for security investigations.
+
 The Random Forest model was evaluated using:
 
 - 80/20 Train-Test Split  
@@ -163,11 +186,18 @@ https://github.com/rohitaswal2108-Roh/-AI-SOC-Alert-Framework.git
 cd AI-SOC-Alert-Framework
 
 3. Create virtual environment and install dependencies:
+source venv/bin/activate
 python -m venv venv
+
+# Activate environment
+Windows:
 venv\Scripts\activate
+
+Linux/Mac:
+source venv/bin/activate
 pip install -r requirements.txt
 
-4. Open and run:
+5. Open and run:
 notebooks/soc_alert_ml.ipynb
 
 ---
@@ -207,26 +237,32 @@ notebooks/soc_alert_ml.ipynb
 ```
 AI-SOC-Alert-Framework/
 │
-├── data/
-├── notebooks/
+├── data/              # synthetic SOC alert dataset
+├── notebooks/         # machine learning training notebook
 │   └── soc_alert_ml.ipynb
-├── model/
+├── model/             # trained ML models
 │   ├── soc_alert_model.pkl
 │   └── label_encoder.pkl
-├── screenshots/
-└── report/
+├── screenshots/       # visual outputs and plots
+└── report/            # optional documentation
 ```
 
 ## Security Relevance
 
-This project demonstrates how machine learning can enhance SOC operations by:
+This project demonstrates how machine learning can enhance Security Operations
+Center (SOC) workflows by automatically prioritizing alerts, reducing manual
+triage workload, and supporting faster incident response.
 
-- Reducing alert fatigue  
-- Accelerating triage decisions  
-- Standardizing response actions  
-- Supporting data-driven security operations  
+Key operational benefits include:
 
-The framework bridges cybersecurity operations with applied AI, reflecting modern SOC automation trends and enterprise-scale security challenges.
+- Reducing alert fatigue for SOC analysts
+- Accelerating alert triage and prioritization
+- Standardizing response recommendations
+- Supporting data-driven security operations
+
+The framework bridges cybersecurity operations with applied machine learning
+and reflects modern SOC automation trends used in enterprise security
+environments.
 
 ---
 
@@ -272,9 +308,6 @@ model tuning, and validation using production security telemetry.
 
 ---
 
-## Author
-
-**Rohit Aswal**
 ## Author
 
 **Rohit Aswal**
