@@ -1,0 +1,5 @@
+Model,Synthetic Acc (%),Synthetic Time (s),Real Acc (%),Real Time (s)
+Random Forest,98.0,0.272,100.0,1.6
+Decision Tree,98.0,0.005,100.0,0.07
+XGBoost,98.0,0.182,99.99,1.57
+Logistic Regression,94.0,0.359,99.88,39.16
