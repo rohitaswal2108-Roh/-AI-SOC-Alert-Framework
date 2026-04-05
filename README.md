@@ -160,7 +160,7 @@ The model was validated against **175,341 real network records** from the UNSW-N
 
 > **⚠️ On false negatives:** Special attention was given to minimising false negatives on Critical-severity alerts. In a real SOC environment, a missed high-severity threat represents the highest operational risk — far more damaging than a false positive. The model's near-perfect recall on Critical alerts reflects this priority.
 
-> **📈 Why this matters operationally:** Reducing low-value alert volume while preserving high-severity detections directly improves Mean Time to Respond (MTTR) and analyst efficiency — two of the most critical KPIs in enterprise SOC operations.
+> **📈 Why this matters operationally:** In SOC operations literature, reducing low-value alert volume while preserving high-severity detections is widely recognised as a key factor in improving Mean Time to Respond (MTTR) and analyst efficiency — two of the most critical KPIs in enterprise security operations. This project demonstrates that principle at benchmark scale.
 
 > ✅ Real-world validation confirms strong classification performance on benchmark data. See Known Limitations below for important context on interpreting these results in real SOC environments.
 
